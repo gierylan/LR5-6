@@ -1,0 +1,123 @@
+/* Крок 1. Загальні стилі */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #0c0c0c;
+    background-color: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Декоративний шрифт */
+.cursive-font {
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Крок 2. Герой-секція та фонове зображення */
+.hero-section {
+    background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+/* Навігація та ховери */
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link i:hover {
+    color: #ffbe33 !important;
+}
+
+.btn-warning {
+    background-color: #ffbe33;
+    border-color: #ffbe33;
+}
+
+.btn-warning:hover {
+    background-color: #e69c00 !important;
+    border-color: #e69c00 !important;
+}
+
+/* Карусель індикатори */
+.carousel-indicators [data-bs-target] {
+    background-color: #ffffff;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #ffbe33 !important;
+    width: 17px !important;
+    height: 17px !important;
+}
+
+.carousel-item {
+    min-height: 80vh;
+}
+
+/* Крок 3. Стилі для акційних пропозицій (Offers) */
+.offer-image {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.offer-image:hover img {
+    transform: scale(1.10);
+}
+
+/* Крок 4. Стилі для меню (pills та картки) */
+.menu-nav .nav-item .nav-link {
+    color: #222831;
+}
+
+.menu-nav .nav-item .nav-link.active {
+    background-color: #222831 !important;
+    color: #ffffff !important;
+}
+
+.card-image {
+    height: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+
+.card-image img {
+    width: 180px;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Крок 6. Стилі для акордеона (FAQ) */
+.accordion-button {
+    background-color: #222831 !important;
+    color: #fff !important;
+}
+
+.accordion-button:focus {
+    box-shadow: none !important;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #ffbe33 !important;
+    color: #fff !important;
+}
+
+.accordion-button::after {
+    filter: brightness(0) invert(1);
+}
+
+.accordion-body {
+    background-color: #222831 !important;
+    color: #fff !important;
+}
